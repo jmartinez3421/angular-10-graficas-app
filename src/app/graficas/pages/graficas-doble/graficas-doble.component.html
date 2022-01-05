@@ -1,0 +1,19 @@
+<h1>Gráficas Dobles</h1>
+<hr>
+
+<div class="row justify-content-center">
+    <div class="col-5">
+        <h5>Gráfica 1</h5>
+        <hr>        
+        <app-grafica-barra 
+            [horizontal]='true'
+            [barChartData]="proveedoresData"        
+        ></app-grafica-barra>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+        <h5>Gráfica 2</h5>
+        <hr>
+        <app-grafica-barra [barChartData]="productoData"></app-grafica-barra>
+    </div>
+</div>

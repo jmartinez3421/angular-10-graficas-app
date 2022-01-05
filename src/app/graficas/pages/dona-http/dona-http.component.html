@@ -1,0 +1,23 @@
+<h1>Gráfica de Donut Http</h1>
+<hr>
+
+<div class="alert alert-info" *ngIf="dataDona.length === 0; else divDona">
+    Cargando...
+</div>
+
+<ng-template #divDona>
+    <div class="row justify-content-center">
+        <div class="col-6">
+                <div style="display: block">
+                    <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType">
+                    </canvas> 
+                </div>
+    
+        </div>
+    </div>
+
+    <span class="float-end text-info">
+        Información en Billones de Usuarios
+    </span>
+</ng-template>
+
